@@ -1,2 +1,2 @@
-# final-project-Origamid
+# Final Project Origamid 
 Final project to the React course at Origamid.
