@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 4rem;
+    color: #333;
+    --type-principal: Helvetica, Arial, sans-serif;
+    --type-secondary: 'Spectral', Georgia;
+    font-family: var(--type-principal);
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button, input {
+    display: block;
+    font: var(--type-principal) 1rem;
+    color: #333;
+}
+
+.container {
+    padding: 0 1rem;
+    margin: 0 auto;
+}
