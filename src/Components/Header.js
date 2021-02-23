@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from "styled-components";
 import { ReactComponent as Dogs } from "../Assets/dogs.svg";
 import UsuarioSVG  from "../Assets/usuario.svg";
-import { UserContext } from './UserContext';
+import { UserContext } from '../UserContext';
 
 const HeaderContainer = styled.header`
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
@@ -44,7 +44,7 @@ const NavLinkLogin = styled(NavLink)`
 const Header = () => {
     const { data } = React.useContext( UserContext);
 
-    const navUser = data ? ( <NavLinkLogin to="/cont">{data.nome}</NavLinkLogin> ) : ( <NavLinkLogin to="/login">Login / Criar</NavLinkLogin> );
+    const navUser = data ? ( <NavLinkLogin to="/conta">{data.nome}</NavLinkLogin> ) : ( <NavLinkLogin to="/login">Login / Criar</NavLinkLogin> );
 
     return (
         <HeaderContainer className="container">
