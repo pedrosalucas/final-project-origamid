@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import PhotoComments from './PhotoComments';
 import VisualizacoesBlackSvg from '../../Assets/visualizacao-black.svg';
+import { UserContext } from '../../UserContext';
+import PhotoDelete from './PhotoDelete';
+import Image from '../Helper/Image';
 
 const scaleUp = keyframes`
     to {
@@ -89,18 +92,23 @@ const DivContent = styled.div`
 `;
 
 const PhotoContent = ({ data }) => {
+    const user = React.useContext(UserContext);
     const { photo, comments } = data;
 
     return (
         <DivContent>
             <div className="img">
-                <img src={photo.src} alt={photo.title} />
+                <Image src={photo.src} alt={photo.title} />
             </div>
             <div className="detalhes">
                 <div>
                     <div>
                         <p className="autor">
-                            <Link to={`/perfil/${photo.author}`}>@{photo.author}</Link>
+                            {user.data && (user.data.username === photo.author) ? (
+                                <PhotoDelete id={photo.id} />
+                            ) : (
+                                <Link to={`/perfil/${photo.author}`}>@{photo.author}</Link>
+                            )}
                             <span className="visualizacoes">{photo.acessos}</span>
                         </p>
                         <h1 className="title">

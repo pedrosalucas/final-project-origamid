@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import VisualizacaoImg from '../../Assets/visualizacao.svg';
+import Image from '../Helper/Image';
 
 const PhotoItem = styled.li`
     display: grid;
@@ -8,12 +9,12 @@ const PhotoItem = styled.li`
     overflow: hidden;
     cursor: pointer;
 
-    img {
-        grid-area: 1 / 1;
+    .imgElement {
+        grid-area: 1/1;
     }
 
     .visualizacao {
-        grid-area: 1 / 1;
+        grid-area: 1/1;
         background-color: rgba(0, 0, 0, .3);
         color: #fff;
         font-size: 1rem;
@@ -52,7 +53,7 @@ const PhotoItem = styled.li`
 const FeedPhotosItem = ({ photo, setModalPhoto }) => {
     return (
         <PhotoItem onClick={ () => setModalPhoto(photo) }>
-            <img src={photo.src} alt={photo.title} />
+            <Image classWrapper="imgElement" src={photo.src} alt={photo.title} />
             <span className="visualizacao">{photo.acessos}</span>
         </PhotoItem>
     );

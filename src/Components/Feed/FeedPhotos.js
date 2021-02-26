@@ -7,6 +7,7 @@ import { PHOTOS_GET } from '../../api';
 import styled from 'styled-components';
 
 const PhotosList = styled.ul`
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;

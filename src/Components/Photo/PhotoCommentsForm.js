@@ -24,7 +24,7 @@ const FormComment = styled.form`
         display: block;
         width: 100%;
         font-size: 1rem;
-        font-family: var(--type-first);
+        font-family: var(--type-princial);
         resize: none;
         border: 1px solid #eee;
         border-radius: .2rem;
