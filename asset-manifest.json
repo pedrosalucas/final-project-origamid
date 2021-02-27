@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/final-project-origamid/static/css/main.df63a072.chunk.css",
+    "main.js": "/final-project-origamid/static/js/main.84a6f525.chunk.js",
+    "main.js.map": "/final-project-origamid/static/js/main.84a6f525.chunk.js.map",
+    "runtime-main.js": "/final-project-origamid/static/js/runtime-main.cb573585.js",
+    "runtime-main.js.map": "/final-project-origamid/static/js/runtime-main.cb573585.js.map",
+    "static/js/2.f13de9bd.chunk.js": "/final-project-origamid/static/js/2.f13de9bd.chunk.js",
+    "static/js/2.f13de9bd.chunk.js.map": "/final-project-origamid/static/js/2.f13de9bd.chunk.js.map",
+    "static/js/3.a5e68c64.chunk.js": "/final-project-origamid/static/js/3.a5e68c64.chunk.js",
+    "static/js/3.a5e68c64.chunk.js.map": "/final-project-origamid/static/js/3.a5e68c64.chunk.js.map",
+    "static/js/4.1bfd9f2c.chunk.js": "/final-project-origamid/static/js/4.1bfd9f2c.chunk.js",
+    "static/js/4.1bfd9f2c.chunk.js.map": "/final-project-origamid/static/js/4.1bfd9f2c.chunk.js.map",
+    "index.html": "/final-project-origamid/index.html",
+    "static/css/main.df63a072.chunk.css.map": "/final-project-origamid/static/css/main.df63a072.chunk.css.map",
+    "static/js/3.a5e68c64.chunk.js.LICENSE.txt": "/final-project-origamid/static/js/3.a5e68c64.chunk.js.LICENSE.txt",
+    "static/media/adicionar.2fe277f9.svg": "/final-project-origamid/static/media/adicionar.2fe277f9.svg",
+    "static/media/dogs-footer.9c77af3a.svg": "/final-project-origamid/static/media/dogs-footer.9c77af3a.svg",
+    "static/media/dogs.9e17390a.svg": "/final-project-origamid/static/media/dogs.9e17390a.svg",
+    "static/media/enviar.1112bddc.svg": "/final-project-origamid/static/media/enviar.1112bddc.svg",
+    "static/media/estatisticas.c69dd1e1.svg": "/final-project-origamid/static/media/estatisticas.c69dd1e1.svg",
+    "static/media/feed.b8b13312.svg": "/final-project-origamid/static/media/feed.b8b13312.svg",
+    "static/media/login.07d71f5b.jpg": "/final-project-origamid/static/media/login.07d71f5b.jpg",
+    "static/media/sair.a1917210.svg": "/final-project-origamid/static/media/sair.a1917210.svg",
+    "static/media/usuario.6d65a298.svg": "/final-project-origamid/static/media/usuario.6d65a298.svg",
+    "static/media/visualizacao-black.ee94fd3d.svg": "/final-project-origamid/static/media/visualizacao-black.ee94fd3d.svg",
+    "static/media/visualizacao.09cd5578.svg": "/final-project-origamid/static/media/visualizacao.09cd5578.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb573585.js",
+    "static/js/3.a5e68c64.chunk.js",
+    "static/css/main.df63a072.chunk.css",
+    "static/js/main.84a6f525.chunk.js"
+  ]
+}
