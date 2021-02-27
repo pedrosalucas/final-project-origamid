@@ -8,6 +8,10 @@ const CommentList = styled.ul`
     word-break: break-word;
     padding: 0 2rem;
 
+    &.single {
+        padding: 0 0 2rem;
+    }
+
     li {
         margin-bottom: .5rem;
         line-height: 1.2;
@@ -25,7 +29,7 @@ const PhotoComments = ( props ) => {
 
     return (
         <>
-            <CommentList ref={commentsSection}>
+            <CommentList ref={commentsSection} className={props.single ? 'single' : ''}>
                 {comments.map(item => (
                     <li key={item.comment_ID}>
                         <b>{item.comment_author}: </b>
@@ -33,7 +37,7 @@ const PhotoComments = ( props ) => {
                     </li>
                 ))}
             </CommentList>
-            {login && <PhotoCommentsForm id={props.id} setComments={setComments} />}
+            {login && <PhotoCommentsForm single={props.single} id={props.id} setComments={setComments} />}
         </>
     );
 };

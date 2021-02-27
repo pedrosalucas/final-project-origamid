@@ -7,6 +7,7 @@ import LoginForm from './LoginForm';
 import LoginPasswordLost from './LoginPasswordLost';
 import LoginPasswordReset from './LoginPasswordReset';
 import LoginImg from '../../Assets/login.jpg';
+import NotFound from '../NotFound';
 
 const LoginSection = styled.section`
     display: grid;
@@ -50,9 +51,10 @@ const Login = () => {
             <div className="formDiv">
                 <Routes>
                     <Route path="/" element={<LoginForm />} />
-                    <Route path="criar-conta" element={<LoginCreate />} />
-                    <Route path="perdeu-senha" element={<LoginPasswordLost />} />
-                    <Route path="resetar-senha" element={<LoginPasswordReset />} />
+                    <Route path="criar" element={<LoginCreate />} />
+                    <Route path="perdeu" element={<LoginPasswordLost />} />
+                    <Route path="resetar" element={<LoginPasswordReset />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </div>
         </LoginSection>

@@ -6,7 +6,7 @@ const WrapperLoading = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-    top: 0px;
+    top: 0;
     left: 0;
     z-index: 1000;
 

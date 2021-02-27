@@ -20,6 +20,10 @@ const FormComment = styled.form`
     align-items: stretch;
     margin: 1rem;
 
+    &.single {
+        margin: 0 2px 1rem;
+    }
+
     textarea {
         display: block;
         width: 100%;
@@ -61,7 +65,7 @@ const FormComment = styled.form`
     }
 `;
 
-const PhotoCommentsForm = ({ id, setComments }) => {
+const PhotoCommentsForm = ({ single, id, setComments }) => {
     const [comment, setComment] = React.useState('');
     const { error, request } = useFetch();
 
@@ -77,7 +81,7 @@ const PhotoCommentsForm = ({ id, setComments }) => {
     }
 
     return (
-        <FormComment onSubmit={handleSubmit}>
+        <FormComment onSubmit={handleSubmit} className={single ? 'single' : ''}>
             <textarea 
                 id="comment"
                 name="comment"

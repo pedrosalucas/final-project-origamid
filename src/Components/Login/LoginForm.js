@@ -78,7 +78,7 @@ const LoginForm = () => {
             <DivCadastreSe>
                 <h2>Cadastre-se</h2>
                 <p>Ainda não possui conta? Cadastre-se no site.</p>
-                <Link className="btn" to="/login/criar-conta">Cadastro</Link>
+                <Link className="btn" to="/login/criar">Cadastro</Link>
             </DivCadastreSe>
         </section>
     );

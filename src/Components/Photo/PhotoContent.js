@@ -27,12 +27,28 @@ const DivContent = styled.div`
     transform: scale(.8);
     animation: ${scaleUp} .3s forwards;
 
+    &.single {
+        grid-template-columns: 1fr;
+        width: fit-content;
+        height: auto;
+    }
+
     .detalhes{
         padding: 2rem 2rem 0 2rem;
     }
 
+    &.single .detalhes {
+        padding: 1rem 0 0 0;
+    }
+
     .img {
         grid-row: 1/4;
+    }
+
+    &.single .img {
+        grid-row: 1;
+        border-radius: .4rem;
+        overflow: hidden;
     }
 
     .autor {
@@ -91,12 +107,12 @@ const DivContent = styled.div`
     }
 `;
 
-const PhotoContent = ({ data }) => {
+const PhotoContent = ({ data, single }) => {
     const user = React.useContext(UserContext);
     const { photo, comments } = data;
 
     return (
-        <DivContent>
+        <DivContent className={single ? 'single' : ''}>
             <div className="img">
                 <Image src={photo.src} alt={photo.title} />
             </div>
@@ -121,7 +137,7 @@ const PhotoContent = ({ data }) => {
                     </div>
                 </div>
             </div>
-            <PhotoComments id={photo.id} comments={comments} />
+            <PhotoComments single={single} id={photo.id} comments={comments} />
         </DivContent>
     );
 };
