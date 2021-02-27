@@ -1,9 +1,11 @@
 # Final Project Origamid 
 Final project to the React course at Origamid.
-<br/>
+<br/><br/>
 
 ### My Result:
 https://pedrosalucas.github.io/
+
+<br/>
 
 ## Libraries used
 | Name                 | Latest release           |
