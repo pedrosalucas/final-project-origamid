@@ -25,6 +25,7 @@ const LoginSection = styled.section`
     div.formDiv {
         max-width: 30rem;
         padding: 1rem;
+        margin-top: 20vh;
     }
 
     @media (max-width: 610px) {

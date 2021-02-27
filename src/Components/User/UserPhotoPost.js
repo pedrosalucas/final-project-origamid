@@ -7,6 +7,7 @@ import Input from '../Forms/Input';
 import Button from '../Forms/Button';
 import { PHOTO_POST } from '../../api';
 import { useNavigate } from 'react-router-dom';
+import Head from '../Helper/Head';
 
 const SectionPostPhoto = styled.section`
     display: grid;
@@ -29,6 +30,10 @@ const SectionPostPhoto = styled.section`
         display: block;
         height: 0;
         padding-bottom: 100%;
+    }
+
+    @media (max-width: 40rem) {
+        grid-template-columns: 1fr;
     }
 `;
 
@@ -68,6 +73,7 @@ const UserPhotoPost = () => {
 
     return (
         <SectionPostPhoto className="animeLeft">
+            <Head title="Poste sua Foto." />
             <form onSubmit={handleSubmit}>
                 <Input type="text" label="Nome" id="nome" {...nome} />
                 <Input type="number" label="Peso" id="peso" {...peso} />

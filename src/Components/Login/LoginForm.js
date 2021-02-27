@@ -6,6 +6,7 @@ import Input from '../Forms/Input';
 import Error from '../Helper/Error';
 import userForm from "../../Hooks/useForm";
 import { UserContext } from '../../UserContext';
+import Head from '../Helper/Head';
 
 const FormStyled = styled.form`
     margin-bottom: 2rem;
@@ -62,13 +63,14 @@ const LoginForm = () => {
     
     return (
         <section className="animeLeft">
+            <Head title="Login" />
             <h1 className="title">Login</h1>
 
             <FormStyled onSubmit={handleLogin}>
                 <Input label="Usuário" type="text" id="username" {...username} />
                 <Input label="Senha" type="password" id="password" {...password} />
                 {loading ? ( <Button disabled>Entrar</Button> ) : ( <Button>Entrar</Button> )}
-                <Error error={error} />
+                <Error error={error && 'Dados Incorretos.'} />
             </FormStyled>
 
             <LinkPerdeuSenha to="/login/perdeu">

@@ -39,6 +39,16 @@ button, input {
     color: #333;
 }
 
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.AppBody {
+    flex: 1;
+}
+
 .container {
     padding: 0 min(68px, 4.5vw);
     margin: 0 auto;

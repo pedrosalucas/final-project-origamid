@@ -33,7 +33,7 @@ const Feed = ({ user }) => {
     }, []);
 
     return (
-        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center',}}>
+        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',}}>
             { modalPhoto && <FeedModal photo={modalPhoto} setModalPhoto={setModalPhoto} /> }
             {pages.map(item => {
                 return <FeedPhotos key={item} user={user} page={item} setModalPhoto={setModalPhoto} setInfinite={setInfinite} />;
